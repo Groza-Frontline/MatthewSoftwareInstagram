@@ -36,25 +36,39 @@ main{
 }
 
 @font-face {
+  margin-top: 40px;
   font-family: 'billabong';
   src: url('Billabong.ttf');
   font-weight: bold;
 }
 
 .page .header > p{
-  font-weight: bold;
-  color: #8e8e8e;
-  font-size: 18px;
+  margin-top: 20px;
+  font-family: Neue Helvetica, sans-serif;
+  color: black;
+  font-size: 16px;
+  margin-bottom: 20px;
 }
 
-.page .header > button{
+.facebook-button {
+  font-family: Neue Helvetica, sans-serif;
+  font-weight: bold;
   cursor: pointer;
   width: inherit;
   padding: 10px 20px;
   border-radius: 5px;
   border: none;
-  background-color: #0095f6;
+  background-color: #3b5998;
   color: #ffffff;
+}
+
+.fa-facebook {
+  margin-right: 10px;
+}
+
+.fa-facebook:before {
+  content: "\f082";
+  font-family: FontAwesome;
 }
 
 .page .header div{
@@ -95,10 +109,12 @@ main{
 }
 
 .page .container form button{
+  font-family: Neue Helvetica, sans-serif;
+  font-weight: bold;
   cursor: pointer;
   width: inherit;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
   padding: 7px 20px;
   border-radius: 5px;
   border: none;
@@ -106,10 +122,35 @@ main{
   color: #ffffff;
 }
 
+.page .container ul{
+  font-family: Neue Helvetica, sans-serif;
+  font-size: 12px;
+  margin-top: 10px;
+  list-style: none;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.page .container ul li{
+  display: inline;
+  color: #8e9096;
+}
+
+.page .container ul li a{
+  text-decoration: none;
+  font-weight: bold;
+  color: #8e9096;
+}
 
 /* option style */
+
+.option p{
+  font-family: Proxima Nova;
+}
+
 .option p > a{
-    text-decoration: none;
+  font-family: Proxima Nova;
+  text-decoration: none;
     color: #00a0f7;
 }
 
@@ -121,17 +162,6 @@ main{
 .otherapps p{
   margin-bottom: 15px;
 }
-
-.otherapps > button{
-  cursor: pointer;
-  border: none;
-  border-radius: 5px;
-  background-color: black;
-  color: white;
-  padding: 10px;
-  font-size: 18px;
-}
-
 
 /* Mobile Styles */
 
@@ -200,14 +230,5 @@ main{
   .otherapps{
     margin: 20px 0;
   }
-
-  .otherapps button{
-    margin-right: 5px;
-  }
-
-  .otherapps button:after-of-type{
-    margin-right: none;
-  }
-
 
 }
