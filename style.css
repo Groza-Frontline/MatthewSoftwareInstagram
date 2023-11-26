@@ -260,4 +260,52 @@ main{
     font-size: 12px;
   }
 
+  @media only screen and (min-width: 401px){
+    body {
+        font-family: Neue Helvetica
+    }
+  .page{
+    border: 1px solid #dbdbdb;
+    width: 350px;
+    background-color: white;
+    margin: 40px 40px 10px 40px;
+  }
+
+  .page .header{
+    width: 270px;
+    margin-top: 15px;
+  }
+
+  .page .container{
+    width: 270px;
+  }
+
+  .option{
+    border: 1px solid #dbdbdb;
+    background-color: white;
+    width: 350px;
+    height: 70px;
+    margin-top: 20px 0;
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+
+  }
+
+  .otherapps{
+    margin: 20px 0;
+  }
+
+  .otherapps button{
+    margin-right: 5px;
+  }
+
+  .otherapps button:after-of-type{
+    margin-right: none;
+  }
+
+  .page .footer{
+    width: 100%;
+  }
+
 }
